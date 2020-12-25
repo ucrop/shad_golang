@@ -52,13 +52,13 @@ func TestWordCount(t *testing.T) {
 			name: "simple",
 			files: files{
 				`a
-		a
-		b
-		с
+a
+b
+с
 
 
-		a
-		b`,
+a
+b`,
 			},
 			expected: counts{"a": 3, "b": 2, "": 2},
 		},

@@ -22,9 +22,9 @@ func main() {
 	countWords := make(map[string]int)
 
 	for _, file := range argsWithProg {
-		dat, err := ioutil.ReadFile(string(file))
+		data, err := ioutil.ReadFile(string(file))
 		check(err)
-		words := strings.Fields(string(dat))
+		words := strings.Split(string(data), "\n")
 
 		for _, word := range words {
 			countWords[word]++
