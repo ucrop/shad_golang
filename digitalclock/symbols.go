@@ -5,6 +5,7 @@ package main
 import "image/color"
 
 var Cyan = color.RGBA{R: 100, G: 200, B: 200, A: 0xff}
+var White = color.RGBA{R: 255, G: 255, B: 255, A: 0xff}
 
 const (
 	Zero = `........
